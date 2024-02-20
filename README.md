@@ -1,6 +1,6 @@
 # Frontend Mentor - Newsletter sign-up form with success message
 
-![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Newsletter sign-up form with success message coding challenge](src/mentorFiles/design/desktop-preview.jpg)
 
 <!-- # Getting Started with Create React App
 
