@@ -1,0 +1,50 @@
+.successBox {
+  width: 370px;
+  padding: 30px 40px;
+}
+
+.successBoxClosed {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  left: -10000px;
+}
+
+.successBox> * {
+  margin-bottom: 20px;
+}
+
+.successBox img {
+  width: 44px;
+  height: 44px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 40px;
+}
+
+.successBox p {
+  font-size: 0.8rem;
+}
+
+.successBox button {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  background-color: var(--charcoalGrey);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.successBox button:hover, 
+.successBox button:active, 
+.successBox button:focus {
+  background: linear-gradient(to right,hsl(0, 81%, 62%), hsl(4, 100%, 67%));
+  box-shadow: -5px 15px 10px hsla(4, 84%, 62%, 0.242), 6px -2px 10px hsla(4, 100%, 67%, 0.242);
+}

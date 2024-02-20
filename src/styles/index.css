@@ -1,0 +1,175 @@
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  src: url("../mentorFiles/assets/fonts/Roboto-Regular.ttf")
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  src: url("../mentorFiles/assets/fonts/Roboto-Bold.ttf")
+}
+
+:root {
+  --customTomato: hsl(4, 100%, 67%);
+  --darkSlateGray: hsl(234, 29%, 20%);
+  --charcoalGrey: hsl(235, 18%, 26%);
+  --customGrey: hsl(231, 7%, 60%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--charcoalGrey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formBox {
+  width: 720px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 15px 50px;
+  overflow: initial;
+  position: static;
+  left: 0;
+  
+}
+
+.formBoxClosed {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  left: -10000px;
+}
+
+main {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--charcoalGrey)
+}
+
+.join {
+  font-size: 0.9rem;
+}
+
+main> * {
+  margin-bottom: 20px;
+}
+
+.listBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.listBox p {
+  margin-left: 15px;
+  font-size: 0.8rem;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form> * {
+  margin-bottom: 10px;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 15px 0 15px 20px;
+  outline: none;
+  color: var(--customGrey);
+  border: 1px solid var(--customGrey);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+form input:focus {
+  border: 1px solid black;
+}
+
+.errorInput {
+  border: 1px solid hsla(4, 100%, 67%, 0.13);
+  color: var(--customTomato);
+  background-color: hsla(4, 100%, 67%, 0.13);
+  outline: none;
+}
+
+.errorInput:focus {
+  border: 1px solid var(--customTomato);
+}
+
+form button {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  background-color: var(--charcoalGrey);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+form button:hover, 
+form button:active, 
+form button:focus {
+  background: linear-gradient(to right,hsl(0, 81%, 62%), hsl(4, 100%, 67%));
+  box-shadow: -5px 15px 10px hsla(4, 84%, 62%, 0.242), 6px -2px 10px hsla(4, 100%, 67%, 0.242);
+}
+
+.errorBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.errorBox p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.errorBox span {
+  font-size: 0.7rem;
+  color: var(--customTomato);
+  font-weight: bold;
+}
+
+.aPictureMobile {
+  position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    left: 50000px;
+}
